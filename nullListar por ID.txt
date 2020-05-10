@@ -1,0 +1,19 @@
+
+
+Listar por ID
+
+URL utilizada é: https://jsonplaceholder.typicode.com/todos/1
+
+Requisição GET
+
+Status code: -1
+Response time: 2581
+
+O Response é: 
+
+{
+    "userId": 1,
+    "id": 1,
+    "title": "delectus aut autem",
+    "completed": false
+}
