@@ -1,6 +1,6 @@
-# Automação de Teste com Selenium
+# Automação de Teste de API
 
-Este projeto tem como objetivo realizar o cadastro de um **Diretor** e um **Filme** e em seguida, realizar a pesquisa pelo nome do **Diretor** e **Filme**, e recuperar a quantidade aproximada de resultados na tela para a pesquisa realizada, através de um código Automatizado utilizando **Selenium**, **Junit**, **Orientação à Objetos**, **Java**, **Page Object**. 
+Este projeto tem como objetivo realizar a consulta no endpoint: [https://jsonplaceholder.typicode.com/todos/1](https://jsonplaceholder.typicode.com/todos/1), através de um Teste Automatizado utilizando **Java**, **RestAssured**, **Cucumber**, validando a mensagem retornada no response.
 
 
 ## Pré Requisitos
@@ -9,8 +9,14 @@ Este projeto tem como objetivo realizar o cadastro de um **Diretor** e um **Film
 
 - Ter o Google Chrome na versão **81.0.4044.138**.
 
+- Ter o **Cucumber** instalado no **Eclipse**. Para realizar a instalação você deve ir no eclipse em **Help > Eclipse Marketplace**, procurar por cucumber e realizar a sua instalação.
+
 ## Para executar o software
 
 - Após ter baixado ou clonado o projeto e extraído em sua máquina, importe o projeto no **Eclipse** usando o **Import Existing Maven Projects**.  
 
-- Expandir no seguinte caminho: **avaliacao>src/test/java>steps** e executar a classe **PesquisaGoogle** clicando com o lado direito do mouse em cima dela e com o lado esquerdo na opção **Run As>JUnit Test**. Com isso o teste será executado e será possível enxergar no console o resultado obtido na execução do software.
+- Expandir no seguinte caminho: **testeAPI > src/test/java > br.com.automation.functionalities** e executar a classe **Runner** clicando com o lado direito do mouse em cima dela e com o lado esquerdo na opção **Run As > JUnit Test**. Com isso o teste será executado e será possível enxergar no console o resultado obtido na execução do software.
+
+- Outra maneira interessante de executar o teste é pela feature. Para isso acesse o seguinte caminho: **testeAPI > src/test/java > br.com.automation.functionalities** e executar a feature clicando com o lado direito do mouse em **cenario.feature** e **Run As > Cucumber Feature**. Com isso o teste será executado e será possível enxergar no console o resultado obtido.
+
+- Na pasta **TestResults** será possível visualizar os logs de execução, quando executamos o software pela classe **Runner**.
